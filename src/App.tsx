@@ -80,9 +80,7 @@ function App() {
       </div>
       <hr />
       <div className="card__author">
-        <div className="card__photo">
-          <img src={data.avatar} alt="Avatar" />
-        </div>
+        <div className="card__photo"></div>
         <p className="card__creation">
           Creation of <span>{data.author}</span>
         </p>

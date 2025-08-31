@@ -132,10 +132,11 @@ body {
     height: 33px;
     border: 1px solid #fff;
     border-radius: 50%;
-  }
 
-  &__photo img {
-    width: 100%;
+    background-image: url(../assets/images/image-avatar.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   &__creation {
