@@ -1,24 +1,32 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useState } from "react";
 import "./App.scss";
-import { getData } from "./utils/httpClient";
-import { type Item } from "./types/Item";
 
 function App() {
-  const [data, setData] = useState<Item | any>({
-    id: 0,
-    title: "",
-    description: "",
-    image: "/",
-    eth: "",
-    days: "",
-    avatar: "/",
-    author: "",
-  });
+  // const [data, setData] = useState<Item | any>({
+  //   id: 0,
+  //   title: "",
+  //   description: "",
+  //   image: "/",
+  //   eth: "",
+  //   days: "",
+  //   avatar: "/",
+  //   author: "",
+  // });
 
-  useEffect(() => {
-    getData().then((p) => setData(p));
-  }, []);
+  // useEffect(() => {
+  //   getData().then((p) => setData(p));
+  // }, []);
+
+  const data = {
+    id: 1,
+    title: "Equilibrium #3429",
+    description: "Our Equilibrium collection promotes balance and calm.",
+
+    image: "assets/images/image-equilibrium.jpg",
+    eth: "0.041 ETH",
+    days: "3 days left",
+    avatar: "assets/images/image-avatar.png",
+    author: "Jules Wyvern",
+  };
 
   return (
     <div className="card">
