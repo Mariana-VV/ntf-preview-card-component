@@ -21,7 +21,7 @@ function App() {
     title: "Equilibrium #3429",
     description: "Our Equilibrium collection promotes balance and calm.",
 
-    image: "assets/images/image-equilibrium.jpg",
+    image: "assets/images/image-avatar.png",
     eth: "0.041 ETH",
     days: "3 days left",
     avatar: "assets/images/image-avatar.png",
