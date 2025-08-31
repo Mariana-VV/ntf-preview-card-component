@@ -30,9 +30,7 @@ function App() {
 
   return (
     <div className="card">
-      <div className="card__image">
-        <img src={data.image} alt="Image" />
-      </div>
+      <div className="card__image"></div>
       <h2 className="card__title">{data.title}</h2>
       <p className="card__text">{data.description}</p>
       <div className="card__data">
