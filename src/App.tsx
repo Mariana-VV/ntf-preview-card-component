@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import "./App.scss";
 import { getData } from "./utils/httpClient";
 import { type Item } from "./types/Item";
 
 function App() {
-  const [data, setData] = useState<Item>({
+  const [data, setData] = useState<Item | any>({
     id: 0,
     title: "",
     description: "",
@@ -16,7 +17,7 @@ function App() {
   });
 
   useEffect(() => {
-    getData().then(setData);
+    getData().then((p) => setData(p));
   }, []);
 
   return (
